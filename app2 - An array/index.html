@@ -1,7 +1,15 @@
-<html>
-	<body>
-		Something
-				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<html ng-app="arrayApp">
+	<head>
+		<link rel="stylesheet" href="style.css"></link>
+	</head>
+	<body ng-controller="arrayController">
+		<div class="row" ng-repeat="row in people">
+			<span class="personData">{{ row.name }}</span>
+			<span class="personData">{{ row.email }}</span>
+			<span class="personData">{{ row.dateEmployed }}</span>
+			<span class="personData">{{ row	.phone }}</span>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>
