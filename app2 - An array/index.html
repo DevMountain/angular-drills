@@ -4,6 +4,13 @@
 	</head>
 	<body ng-controller="arrayController">
 	
+        <li ng-repeat="employee in employees" class="row">
+            <span class="personData">{{employee.name}}</span>
+            <span class="personData">{{employee.email}}</span>
+            <span class="personData">{{employee.dateEmployed}}</span>
+            <span class="personData">{{employee.phone}}</span>
+        </li>
+        
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>

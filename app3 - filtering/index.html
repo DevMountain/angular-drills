@@ -1,7 +1,32 @@
-<html>
-	<body>
-		Something
-				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<html ng-app="arrayApp">
+	<head>
+		<link rel="stylesheet" href="style.css"></link>
+	</head>
+	<body ng-controller="arrayController">
+	
+        <!--
+        create an input box
+            -use ng-model to store the value 'daFilter'
+        on ng repeat use 'daFilter'
+        -->
+        
+        <input ng-model="daFilter"></input>
+
+        <li class="row">
+            <span class="personData">name</span>
+            <span class="personData">email</span>
+            <span class="personData">dateEmployed</span>
+            <span class="personData">phone</span>
+        </li>
+
+        <li ng-repeat="employee in employees | filter:doneFilter" class="row">
+            <span class="personData">{{employee.name}}</span>
+            <span class="personData">{{employee.email}}</span>
+            <span class="personData">{{employee.dateEmployed}}</span>
+            <span class="personData">{{employee.phone}}</span>
+        </li>
+        
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>

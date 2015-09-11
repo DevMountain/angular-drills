@@ -1,6 +1,18 @@
 <html ng-app="apiApp">
-	<body>
-		
+    <head>
+        <link rel="stylesheet" href="styles.css"
+    </head>
+	<body ng-controller="swapiCtrl">
+        Note: PS Don't send me something ugly
+		<h3>Vehicles</h3>
+        <hr/>
+        <input ng-model="swFilter"></input>
+        
+        <li class="header column"><span>Speeder Name</span><span>Cost in Credits</span><span>Credits to USD conversion</span></li>
+    <li class="column" ng-repeat="vehicle in vehicles | filter:swFilter"><span>{{vehicle.name}}</span><span>{{vehicle.cost_in_credits}}</span><span>{{vehicle.cost_in_usd}}</span></li>
+    
+        
+        
 				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>

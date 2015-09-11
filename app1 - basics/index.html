@@ -1,6 +1,11 @@
-<html>
-	<body>
-	
+<html ng-app="basicsApp">
+	<body ng-controller="leonardoCtrl">
+	   <div ng-init="words='These is gud words'">
+            {{words}}
+            <p>{{moarWurds}}</p>
+        </div>
+        
+        
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
