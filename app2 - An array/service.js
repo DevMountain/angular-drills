@@ -101,20 +101,6 @@ var myData = [
 	{"name": "Odysseus Nash", "email": "purus@rutrum.co.uk", "dateEmployed": "01/08/2016", "phone": "722-7908"}
 ];
 
-// "name": 			"Odysseus Nash",
-// "email": 			"purus@rutrum.co.uk",
-// "dateEmployed": 	"01/08/2016",
-// "phone": 			"722-7908"
-
-
-arrayApp.service('arrayService', function(){
-	this.getPeople = function(){
-		return myData;
-	};
-
-	this.people = myData;
-});
-
 
 
 
