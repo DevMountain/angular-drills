@@ -1,0 +1,15 @@
+.some {
+    margin: 6px;
+}
+
+.some > div {
+    padding: 6px;   
+}
+
+.some > span:first-child{
+    font-weight: bold;
+}
+
+.some > span:last-child{
+    color:blue;
+}
