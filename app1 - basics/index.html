@@ -1,5 +1,9 @@
-<html>
-	<body>
+<html ng-app="app1">
+	<body ng-controller="mainCtrl">
+        
+        <li ng-repeat="banana in bananaInfo">
+            {{banana}}
+        </li>
 	
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
