@@ -3,7 +3,7 @@
 ## Set 1
 
 ``1``
-Create an basic angular app where you type in a text box and it shows up as text somewhere else on the screen.
+Create a basic angular app where you type in a text box and it shows up as text somewhere else on the screen.
 
 ``2``
 Create an app where there is an array of data in the service that is shown on the screen as a list
@@ -25,9 +25,9 @@ Create an app that has three routes (using ui-router):
 * sign up `/signup`
 * details `/details`
 
-Create templates for each and a simple menu that allows you navigate between all three routes.
+Create templates for each and a simple menu that allows you to navigate between all three routes.
 
-Use `resolve` in the `details` state to retrieve a list of smurfs from any of the APIs listed in app #4 above. Show that data on the details state/view. Be sure the call to retrieve the deta resides in a service.
+Use `resolve` in the `details` state to retrieve a list of smurfs from any of the APIs listed in app #4 above. Show that data on the details state/view. Be sure the call to retrieve the data resides in a service.
 
 ``7``
 Create a simple element directive that loads in a header from a template using templateUrl
