@@ -47,3 +47,7 @@ Example markup
 ```
 
 To go further, have the above directive make the image's opacity fade by 50% when hovered over. (You'll need to use Angular's built-in jQuery implementation and the linker function).
+
+## Copyright
+
+© DevMountain LLC, 2015. Unauthorized use and/or duplication of this material without express and written permission from DevMountain, LLC is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to DevMountain with appropriate and specific direction to the original content.
