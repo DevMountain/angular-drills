@@ -27,7 +27,7 @@ Create an app that has three routes (using ui-router):
 
 Create templates for each and a simple menu that allows you to navigate between all three routes.
 
-Use `resolve` in the `details` state to retrieve a list of smurfs from any of the APIs listed in app #4 above. Show that data on the details state/view. Be sure the call to retrieve the data resides in a service.
+Use any of the APIs listed in app #4 above.  Get data in the details screen. Show that data on the details state/view. Be sure the call to retrieve the data resides in a service.
 
 ``7``
 Create a simple element directive that loads in a header from a template using templateUrl
