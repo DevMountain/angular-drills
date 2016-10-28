@@ -1,5 +1,12 @@
 <html ng-app="apiApp">
-	<body>
+	<body ng-controller="mainCtrl">
+		<div ng-repeat="ship in ships">
+			<span>{{ship.name}}</span>
+			<span>{{ship.model}}</span>
+			<span>{{ship.cost_in_credits}}</span>
+			<span>{{ship.crew}}</span>
+			<span>{{ship.passengers}}</span>
+		</div>
 		
 				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
